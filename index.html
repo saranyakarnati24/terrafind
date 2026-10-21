@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TerraFind - Visual Inspiration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#">
+      <span class="brand-mark">✳</span>
+      <span>TerraFind</span>
+    </a>
+    <p class="tagline">A little inspiration, in every image.</p>
+  </header>
+
+  <main class="page-content">
+
+    <section class="intro">
+      <p class="eyebrow">YOUR VISUAL DISCOVERY SPACE</p>
+      <h1>Find your next<br>
+        <span>visual idea.</span>
+      </h1>
+      <p class="intro-copy">
+        Explore nature, places, textures and everything
+        that sparks your imagination.
+      </p>
+    </section>
+
+    <form class="search-form" id="search-form">
+      <label class="sr-only" for="search-input">
+        Search for images
+      </label>
+      <span class="search-icon" aria-hidden="true">⌕</span>
+      <input
+        type="search"
+        id="search-input"
+        name="query"
+        placeholder="Try mountains at sunrise"
+        autocomplete="off"
+      >
+      <button type="submit" id="search-button">
+        Search ↗
+      </button>
+    </form>
+
+    <section class="suggestions">
+      <h2>Explore a topic</h2>
+      <div class="chip-row">
+        <button class="chip" type="button">Nature</button>
+        <button class="chip" type="button">Architecture</button>
+        <button class="chip" type="button">Animals</button>
+        <button class="chip" type="button">Travel</button>
+      </div>
+    </section>
+
+    <section class="results-section">
+      <div class="results-heading">
+        <h2>Discoveries</h2>
+        <p id="result-count">Your collection will appear here</p>
+      </div>
+
+      <div id="results" class="results-grid"></div>
+
+      <div class="empty-state" id="empty-state">
+        <div class="empty-icon">✳</div>
+        <h3>Your inspiration starts here</h3>
+        <p>Enter a topic above to make this space your own.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Made for curious minds · TerraFind</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
